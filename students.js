@@ -1,22 +1,3 @@
-// let temp = "codingBlaze";
-// console.log(typeof(temp));
-//
-// temp = true;
-// console.log(typeof(temp));
-//
-// temp = 4;
-// console.log(typeof(temp));
-//
-let arr = [10, 30, 50, 40];
-//[0,   1,  2,  3]
-let arr2 = [];
-
-// console.log({arr2})
-arr2[2] = 55;
-// console.log({arr2})
-// console.log({arr})
-// console.log({ arr, arr2 });
-
 let students = [
     {
         name: "Rohan",
@@ -28,7 +9,14 @@ let students = [
         id: 2,
         marks: { english: 76, maths: 51, science: 8 },
     },
+    {
+        name: "Rohan",
+        id: 1,
+        marks: { english: 67, maths: 15, science: 80 },
+    },
 ];
+
+// Simple For loop
 // for (let i = students.length - 1; i >= 0; i--) {
 //     students[i].averageMarks =
 //         (students[i].marks.english +
@@ -44,6 +32,8 @@ let students = [
 //     console.log(students[i]);
 // }
 // let reversedStudents = students.reverse();
+
+// For..of loop
 // for (let student of reversedStudents) {
 //     student.averageMarks =
 //         (student.marks.english + student.marks.maths + student.marks.science) /
@@ -57,6 +47,7 @@ let students = [
 //     console.log(student);
 // }
 
+// For each loop
 students.forEach((student) => {
     student.averageMarks =
         (student.marks.english + student.marks.maths + student.marks.science) /
@@ -69,9 +60,3 @@ students.forEach((student) => {
             : "Fail";
     console.log(student);
 });
-
-// let tempArray = [10, 20, 30, 40, 50];
-// for (let tempVar of tempArray) {
-//     if (tempVar == 40) continue;
-//     console.log(tempVar);
-// }
