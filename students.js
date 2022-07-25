@@ -1,21 +1,3 @@
-let students = [
-    {
-        name: "Rohan",
-        id: 1,
-        marks: { english: 67, maths: 15, science: 80 },
-    },
-    {
-        name: "Rohit",
-        id: 2,
-        marks: { english: 76, maths: 51, science: 8 },
-    },
-    {
-        name: "Rohan",
-        id: 1,
-        marks: { english: 67, maths: 15, science: 80 },
-    },
-];
-
 // Simple For loop
 // for (let i = students.length - 1; i >= 0; i--) {
 //     students[i].averageMarks =
@@ -60,3 +42,30 @@ students.forEach((student) => {
             : "Fail";
     console.log(student);
 });
+
+let students = [
+    {
+        name: "Rohan",
+        id: 1,
+        marks: { english: 67, maths: 15, science: 80 },
+    },
+    {
+        name: "Rohit",
+        id: 2,
+        marks: { english: 76, maths: 51, science: 8 },
+    },
+    {
+        name: "Ram",
+        id: 3,
+        marks: { english: 87, maths: 75, science: 80 },
+    },
+];
+
+let failStudents = students.filter(
+    (student) =>
+        student.marks.maths < 33 ||
+        student.marks.english < 33 ||
+        student.marks.science < 33
+);
+
+console.log(failStudents);
