@@ -1,19 +1,21 @@
-// function Student(id, name) {
-//     this.id = id;
-//     this.stName = name;
-// }
+// Custom prototype methods
+function Student(id, name) {
+    this.id = id;
+    this.stName = name;
+}
 
-// Student.prototype.getId = function () {
-//     return this.id;
-// };
+Student.prototype.getId = function () {
+    return this.id;
+};
 
-// Student.prototype.getName = function () {
-//     return this.stName;
-// };
+Student.prototype.getName = function () {
+    return this.stName;
+};
 
-// let s1 = new Student(10, "Rajesh");
-// console.log(`${s1.getId()} => ${s1.getName()}`);
+let s1 = new Student(10, "Rajesh");
+console.log(`${s1.getId()} => ${s1.getName()}`);
 
+// Creating prototypes from Javascript classes
 Array.prototype.even = function () {
     return this.filter((num) => num % 2 == 0);
 };
