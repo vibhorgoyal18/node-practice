@@ -37,3 +37,11 @@ function sum(...arr) {
 }
 
 console.log(sum(10, 11, 15, 9));
+
+function getCurrentDate() {
+    return new Date().toISOString();
+}
+
+getCurrentDate = () => new Date().toISOString();
+
+console.log(getCurrentDate());
